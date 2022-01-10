@@ -25,7 +25,7 @@ function Registration() {
         // const response = await axios.post('http://localhost:4000/user-regist', userDetail)
         // console.log(response);
 
-        await axios.post('http://localhost:4000/user-register', userDetail).then((data) => {
+        await axios.post('https://bms-backend-ishita.herokuapp.com/user-register', userDetail).then((data) => {
             Swal.fire({
                 title: `<strong>${data.data.message}</strong>`,
                 icon: 'success',

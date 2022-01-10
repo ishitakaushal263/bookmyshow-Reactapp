@@ -14,7 +14,7 @@ function SingleMovieMongo() {
     const [data, setData] = useState([]);
     useEffect(async () => {
         try {
-            const response = await axios.get(`https://bms-backend-deepanshu.herokuapp.com/movies/${movid}`);
+            const response = await axios.get(`https://bms-backend-ishita.herokuapp.com/movies/${movid}`);
             console.log(response);
             setData([response.data]);
         } catch (error) {
